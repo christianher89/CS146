@@ -1,4 +1,3 @@
-
 Problem 1: Insertion Sort
   For insertion sort, we have an array of integers ranging to an infinite number of them. 
 It takes an action to take the integer out of the array and set it as an element out of the array.
@@ -15,4 +14,12 @@ The time complexity for Insertion sort is:
   BigTheta(n^2)
 
 Problem 2: Matrix Multiplication
-  
+  In this case, we have three for loops. A for loop that increases by one and goes to the end
+of an array takes O(n) time. Since we have three for loops, the worst-case scenario would give 
+us O(n^3). The best-case and average-case scenario would still be BigOmega(n^3) and BigTheta(n^3)
+because you still have to go through every element in each column and row to be multiplied and
+added to the sum which is printed at the end
+The time complexity for Matrix Multiplication is:
+  O(n^3)
+  BigOmega(n^3)
+  BigTheta(n^3)
