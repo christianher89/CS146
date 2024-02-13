@@ -1,3 +1,4 @@
+JAVA:
 public static void main(String[] args) {
 	ArrayList<Integer> nums = new ArrayList<Integer>();
 	int target = 12;
@@ -13,3 +14,6 @@ public static void main(String[] args) {
 		}
 	}
 }
+
+PYTHON:
+n
