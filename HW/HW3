@@ -1,2 +1,18 @@
-Insertion Sort:
-For insertion sort, we take two different lists. One list 
+
+Problem 1: Insertion Sort
+  For insertion sort, we have an array of integers ranging to an infinite number of them. 
+It takes an action to take the integer out of the array and set it as an element out of the array.
+As the array grows, that will take the same amount of steps, n. So from there, it would already be O(n). 
+Now that same integer has to compare to every integer to the left of the array (closer index to 0) until 
+it finds its index. That takes another amount of steps, n. In this case, the average would be BigTheta(n^2)
+So this would be the worst-case scenario O(n^2). The best-case scenario would be BigOmega(n). This is only
+possible if all the numbers in the array are already put in order so we go through each integer comparing 
+to the left without having to move. In the worst-case scenario where the array is set from biggest to smallest
+and we have to compare every number, it will still be O(n^2)
+The time complexity for Insertion sort is:
+  O(n^2)
+  BigOmega(n)
+  BigTheta(n^2)
+
+Problem 2: Matrix Multiplication
+  
