@@ -1,18 +1,23 @@
 import java.util.*;
 
 public class Lab2 {
+	public static String removeNonAlphanumeric(String str) {
+		str = str.replaceAll("[^a-zA-Z0-9]", "");
+		return str;
+	}
 	public static boolean compare(String str1, String str2) {
 		// Checks if both are same length
-		ArrayList<Character> strArray = new ArrayList<Character>();
-		for (int i = 0; i < str1.length(); i++) {
-			strArray.add(str1.charAt(i));
-		}
-		
+		str1 = removeNonAlphanumeric(str1);
+		str2 = removeNonAlphanumeric(str2);
 		if (str1.length() != str2.length()) {
 			return false;
 		}
 		str1 = str1.toLowerCase();
 		str2 = str2.toLowerCase();
+		ArrayList<Character> strArray = new ArrayList<Character>();
+		for (int i = 0; i < str1.length(); i++) {
+			strArray.add(str1.charAt(i));
+		}
 		// Integer to count if each letter can be found in both words
 		int count = 0;
 		// ArrayList to store str1's letters
