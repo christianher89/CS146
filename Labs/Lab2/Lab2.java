@@ -3,6 +3,11 @@ import java.util.*;
 public class Lab2 {
 	public static boolean compare(String str1, String str2) {
 		// Checks if both are same length
+		ArrayList<Character> strArray = new ArrayList<Character>();
+		for (int i = 0; i < str1.length(); i++) {
+			strArray.add(str1.charAt(i));
+		}
+		
 		if (str1.length() != str2.length()) {
 			return false;
 		}
@@ -11,17 +16,13 @@ public class Lab2 {
 		// Integer to count if each letter can be found in both words
 		int count = 0;
 		// ArrayList to store str1's letters
-		ArrayList<Character> ana = new ArrayList<Character>();
-		for (int i = 0; i < str1.length(); i++) {
-			ana.add(str1.charAt(i));
-		}
 		// Compare every letter in str2 with every 
 		// letter in str1 (stored in the ArrayList)
 		for (int i = 0; i < str2.length(); i++) {
-			for (int j = 0; j < ana.size(); j++) {
-				if (str2.charAt(i) == ana.get(j)) {
+			for (int j = 0; j < strArray.size(); j++) {
+				if (str2.charAt(i) == strArray.get(j)) {
 					count++;
-					ana.remove(j);
+					strArray.remove(j);
 				}
 			}
 		}
