@@ -1,0 +1,11 @@
+Problem 1: Insertion Sort
+The time complexity for Insertion sort is:
+  O(n^2)
+  BigOmega(n)
+  BigTheta(n^2)
+
+Problem 2: Matrix Multiplication
+The time complexity for Matrix Multiplication is:
+  O(n^3)
+  BigOmega(n^3)
+  BigTheta(n^3)
