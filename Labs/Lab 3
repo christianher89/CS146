@@ -1,1 +1,25 @@
+Problem 1:
+  1. 10000000000n^2 vs. n^3
+    -n^3 is asymptotically greater when n > 10000000000. Because
+    we have n that can go up to infinite, it would be true. A 
+    higher exponent will always be greater.
+  2. n^2log(n) vs.  n(log(n))^10
+    -n^2log(n) is asymptotically greater because the n is being
+    squared. For the n(log(n))^10, the 10 can be put on the outside
+    because of the log properties, making it 10n(log(n)).
+  3. n^logn vs 2^sqrt(n)
+    -2^sqrt(n) is asymptotically greater. We have n^logn that can be 
+    simplified. It is logn(logn) = log((logn)^2) = 2(log(logn)). logn
+    is very fast while 2 to the power of sqrt(n) is still taking the
+    power of sqrt(n) to 2, so 2 will dramatically increase.
+  4. 2^n vs. 2^2n
+    -2^2n is asymptotically greater because we know that the n is being
+    multiplied by 2, making the power much greater. 
 
+Problem 2:
+  1. Best Case:
+    -Constant time or O(1)
+  2. Worst Case:
+    -BigOmega(log(n))
+  3. Average Case:
+    -Theta(sqrt(n))
