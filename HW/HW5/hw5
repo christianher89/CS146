@@ -8,3 +8,4 @@ Problem 1:
       = 2^kT(N-k) + 2^k-1 + 2^k-2 +...+ 2^2 + 2 + 1
     Master Method:
     
+  2. 3T(N-1) + n
