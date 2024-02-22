@@ -1,2 +1,10 @@
 Problem 1: 
   1. T(N) = 2T(N-1) + 1
+    Recursion Tree:
+      T(N) = 2T(N-1) + 1
+      = 2[2T(N-2) + 1] + 1
+      = 2^2T(N-2) + 2 + 1
+      = 2^3T(N-3) + 2^2 + 2 + 1
+      = 2^kT(N-k) + 2^k-1 + 2^k-2 +...+ 2^2 + 2 + 1
+    Master Method:
+    
