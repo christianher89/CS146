@@ -42,7 +42,7 @@ Problem 1:
     5. T(N) = 4T(N/2) + (n^2)logn
       Master Method:
         a = 4, b = 2, k = 2, p = 1
-        Log(base 2)4 = 2, = k so we we use case 2 where
+        Log(base 2)4 = 2, = k so we use case 2 of the master method where
         log(base b)a = k, then p > -1 would be Theta(n^k*log^(p+1)n)
         So we have:
         T(N) = Theta(n^2*log^2n)
@@ -50,7 +50,7 @@ Problem 1:
     6. T(N) = 5T(N/2) + n^2/logn
       Master Method:
         a = 5, b = 2, k = 2, p = -1
-        Log(base 2)5 > k so we use case 1 where
+        Log(base 2)5 > k so we use case 1 of the master method where
         log(base b)a > k, then we have theta(n^log(base b)a)
         So we have:
         T(N) = Theta(n^log(base 2)5)
@@ -60,4 +60,9 @@ Problem 2:
   recurrence formula:
   T(N) = 2T(N/2) + 10n
     Master Method:
+      a = 2, b = 2, k = 1, p = 0
+      log(base 2)2 = 1 = k, so we can use case 2 of the master method where
+      log(base b)a = k, then p > -1 would be Theta(n^k*log^(p+1)n)
+      So we have:
+      T(N) = Theta(n^2*logn)
       
