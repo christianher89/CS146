@@ -1,0 +1,4 @@
+I have a compareStartTimes method that implements Comparator to compare each start time for our
+2D arrays. Then we implement the minMeetingRooms method that takes a 2D array parameter. It checks
+if the array is empty and returns 0 if so. If not empty, it sorts the start times of our 2d array by
+implementing the compareStartTimes comparator to the 2D array. 
