@@ -1,1 +1,12 @@
-
+First I made the FloodFill method that takes in the image, the location of the starting pixel, and the color
+that it will be changed to as parameters. I made an int to keep the original color, which is the location
+of the starting pixel and if it was already the same number/color as the "new" color, then we can
+just return the image. If not, then we can go through a depth-first search. Now we have the parameters as
+the image, the location of the starting pixel, the original color, and the new color that we want to change
+the pixels that are connected to. First, we have an if statement that checks if it's out of bounds or if
+it's not equal to the original color. The reason is that if it is the original color, then we can change
+it to the new color, and if it isn't, then it may be the new color already or a completely different color
+that does not match with connected colors to the starting pixel. From there, we can change the starting
+pixel to the new color and recursively call each 4-directional pixel to change colors if it is connected. 
+Then I created a main method that just tests the announced test cases and a printImage method to print the
+"image".
