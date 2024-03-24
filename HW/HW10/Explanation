@@ -1,0 +1,11 @@
+First I have the TreeNode class implementation. Then we have the LevelOrder Method that
+returns a 2D list which then calls the levelOrderHelper method. This method takes in the
+root, 2D list, and the level as parameters, the level being each level of the tree and 0 
+being the root level of the tree. The levelOrderHelper method creates a new arraylist in
+each list if the level is equal to the size of the 2D list so that we have an arraylist for
+each level of the tree. We then make sure to get the correct level (list) of the 2D list and
+insert the node's data at that level. I then made two recursive calls to traverse each left 
+and right child of the tree, making sure that we add 1 to the level if we are traversing
+down each level. This then keeps adding the node's data to the correct level until the tree
+is finished. Then there is the main method that includes the announced test case which tests
+my code.
