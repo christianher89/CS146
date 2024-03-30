@@ -1,1 +1,9 @@
-
+My code creates an Adjacency list by importing the List and ArrayList utilities. We initialize it
+in the canFinish function which takes in parameters of the number of courses, and the 2D array of
+prerequisites. We represent this graph as an adjacency list where each number can be pointed to
+another number as its prerequisite. We are checking if there are any cycles in the graph,
+and if there are, then we can see that it doesn't work because there are prerequisites that cycle
+against each other, creating a contradiction. So we want to do a depth-first search by having a
+boolean and inStack 2D array to make sure that we set integers/neighbors as visited or if they
+are currently in the stack. This method recursively calls so if it catches in the stack then we
+can also say that there is a cycle. Then we have our main method with another test case of mine.
