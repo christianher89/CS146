@@ -1,1 +1,10 @@
-
+In Lab7, we are told to output the city with the smallest number of cities that are reachable 
+through some path, where the distance is at most the distanceThreshold. I took a Floyd-Warshall 
+dynamic programming approach. We first create a 2D array with the size of n * n to represent
+the distances between cities. We then initialize each city to have an "infinite" distance 
+between cities because there are none implemented, and set a city that is traveling to itself
+as 0. Then we iterate through all edges and add them to the distances array to assign their
+weights. Next we implemented the Floyd-Warshall algorithm which always takes the minimum
+weight of each path. Afterwards we iterate through every city that connects to another and
+compare it to the distance threshold to see if there's a city that matches the threshold. Then
+we return it.
