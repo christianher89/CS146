@@ -57,11 +57,5 @@ public class Lab7 {
 		int[][] edges2 = {{0,1,2},{0,4,8},{1,2,3},{1,4,2},{2,3,1},{3,4,1}};
 		int distanceThreshold2 = 2;
 		System.out.println(run.findTheCity(n2, edges2, distanceThreshold2));
-		
-		int n3 = 8;
-		int[][] edges3 = {{0,5,3},{0,2,9},{0,7,1},{0,1,4},{1,6,2},{1,3,6},{2,4,9},{2,3,5},{3,4,7},
-						{3,5,2},{3,7,1},{4,5,2},{4,7,6},{5,6,3},{5,7,7},{6,7,8}};
-		int distanceThreshold3 = 8;
-		System.out.println(run.findTheCity(n3, edges3, distanceThreshold3));
 	}
 }
