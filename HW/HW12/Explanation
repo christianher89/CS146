@@ -1,1 +1,12 @@
-
+For HW12, I went with Kruskal's algorithm. We initialize a parent array that is used in
+the union-find function that connects the disjoint sets in Kruskal's algorithm and keeps
+track of the parent Node of each house. We have the find function that implements the
+union-find algorithm. We create a new 2D array that copies the contents of pipes and
+adds new rows to include wells. The for loop after adds the costs of wells per index
+of i. Then we initialize the parent array to a size of n+1 and take each index i
+in parent to point to itself at first. Now we have an enhanced for loop that checks
+every "pipe" in the nums array which represents a pipe connection or a well with 3 
+elements being house1, house2, and cost. Lastly we find the first and second root node
+which is house1 and house2 and check if they have any valid connections, add their total
+costs, and decrement the amount of houses checked, finding the smallest edges and therefore
+returning the total cost.
