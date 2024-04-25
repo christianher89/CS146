@@ -1,1 +1,12 @@
-
+The coin change problem gives us a similar problem to the 01 knapsack problem.
+We want to iterate from the bottom-up using tabulation, iterating each cost
+in amount. So my code creates an array all filled with infinity besides the
+first index, in the case of amount = 0. Then we iterate through every cost
+in amount starting from 1, ignoring 0 because 0 cost is 0, and also iterate
+through every coin in the array coins. We have an if statement checking index
+out of bounds for i - coins[j] and checking in dp if it doesn't equal infinity 
+so that we can update it and find the minimum value, among itself and the amount
+of coins it takes to reach the amount. We then check if the index of amount
+our dp array is left with infinity and if so, then return -1, else then return
+the index of amount in dp to return the amount of coins it takes to reach the
+amount. 
